@@ -4,11 +4,13 @@ int main()
 {
 int n;
 cin>>n;
-for(int i=1;i<=10;i++)
-{
-    cout<<n<<" * "<<i<<" = "<<n*i<<endl;
+int sum=0;
+while(n!=0)
+{ int k=n%10;
+    n=n/10;
+    sum=sum+k;
+
 }
-
-
+cout<<sum;
     return 0;
 }
