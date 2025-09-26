@@ -4,31 +4,29 @@ int main()
 {  
 int n;
 cin>>n;
+int original=n;
+int s=n;
 int sum=0;
-int o=n;
-int p=n;
 int count=0;
 while(n!=0)
 {
-   n=n/10;
-   count++;
+    n=n/10;
+    count++;
 }
-while(o!=0)
+while(s!=0)
 {
-    int k=o%10;
-    sum=sum+(int)pow(k,count);
-     o=o/10;
-
+    int k=s%10;
+    sum=sum+pow(k,count);
+    s=s/10;
 }
-if(sum==p)
+if(sum==original)
 {
-    cout<<"it is a armstrong number";
-    
+    cout<<"armstrong";
 }
 else{
-    cout<<"it is not a armstrong number";
-
+    cout<<"not a armstrong";
 }
+
 
     return 0;
 }
