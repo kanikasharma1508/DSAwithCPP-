@@ -8,11 +8,22 @@ void fac(int n)
         cout<<i<<endl;
     }
 }
+    int sum(int s)
+    {   int ss=0;
+        for(int i=2;i<s;i++)
+        {
+            if(s%i==0)
+            ss=ss+i;
+        }
+        return ss;
+    }
+
 int main()
 {
 int n;
 cin>>n;
 fac(n);
+cout<<sum(n);
 
 
     return 0;
