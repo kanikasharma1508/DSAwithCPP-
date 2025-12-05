@@ -1,10 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main()
+int beauty(string s)
 {
-string s;
-cin>>s;
-map<char,int>mpp;
+    map<char,int>mpp;
 for(int i=0;i<s.length();i++)
 {
     mpp[s[i]]++;
@@ -23,7 +21,15 @@ for(auto it:mpp)
         max=it.second;
     }
 }
-cout<<max-min;
+return max-min;
+
+}
+int main()
+{
+string s;
+cin>>s;
+
+cout<<beauty(s);
 
 
 
