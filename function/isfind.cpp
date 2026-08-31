@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+bool isfind(int arr[],int n,int k)
+{
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]==k)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+int main()
+{
+int n;
+cin>>n;
+int arr[n];
+for(int i=0;i<n;i++)
+{
+    cin>>arr[i];
+}
+int k;
+cin>>k;
+cout<<isfind(arr,n,k);
+
+    return 0;
+}
